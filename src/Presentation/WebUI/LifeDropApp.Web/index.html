@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeDrop App</title>
+    <link rel="page icon" href="Authentication/images/icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="text-gray-400 bg-gray-200">
+    <div class="grid">
+        <div class="">
+            <nav>
+                <div class="flex flex-row border-red-300 p-6 flex justify-center md:justify-between">
+                    <div class="w-12 h-12 m-3">
+                        <img src="Authentication/images/icon.png" class="shodow-xl rounded-full w-12 h-12 border-red-500" alt="icon-pic">
+                    </div>
+                    <h1 class="font-bold uppercase text-6xl text-red-500 ml-24"><a href="/">LifeDrop App</a></h1>
+                    <div class="text-2xl mt-3">
+                        <a href="Authentication/HTML/login.html">Log in</a>
+                        <a href="Authentication/HTML/register.html" class="ml-2">Sign up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <main class="px-16 py-6">
+            
+            <header>
+                <h2 class="text-red-400 text-6xl font-semibold mb-10 ml-12">Blood Needs</h2>
+            </header>
+            <div class="text-white bg-red-500 rounded-md p-2">
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 p-2">Latest Blood Needs</h4>
+                <div id="needs" class="mt-8 grid lg:grid-cols-4 gap-10">
+                    <!-- Card go here -->
+                </div>
+            </div>
+            <div class="flex flex-row justify-end mt-12 text-xs">
+                <p>Copyright &copy;2023</p>
+                <p>With<span class="text-red-500 text-2xl">&hearts;</span> by <a href="#" class="hover:underline text-red-500" aria-hidden="true">Adamın Biri</a></p>
+            </div>
+        </main>
+    </div>
+    <script src="./cookies.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>

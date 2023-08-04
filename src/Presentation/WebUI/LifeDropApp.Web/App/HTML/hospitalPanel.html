@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital-Panel</title>
+    <link rel="page icon" href="../../Authentication/images/icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="text-gray-400 bg-gray-200">
+    <div class="grid">
+        <div>
+            <nav>
+                <div class="flex flex-row border-b border-red-300">
+                    <div class="w-12 h-12 m-3">
+                        <img src="../../Authentication/images/icon.png" class="shodow-xl rounded-full w-12 h-12 border-red-500" alt="icon-pic">
+                    </div>
+                    <h1 class="font-bold uppercase p-6"><a href="/">LifeDrop App</a></h1>           
+                    <div class="flex w-8/12 justify-center">
+                        <h1 class="font-bold ml-12 uppercase text-red-500 p-6 text-4xl" id="welcomeHospital"></h1>    
+                    </div>
+                    <button class="font-bold p-6 w-40" onclick="logout()">Log out</button>
+                </div>
+            </nav>
+        </div>
+        <header>
+            <h2 class="text-gray-400 text-6xl font-semibold m-6 mb-2">Blood Needs</h2>
+        </header>
+        
+        <div id="bloodNeedsDiv" class="m-8 rounded-md grid lg:grid-cols-4 p-12 bg-red-600"></div>
+        <main class="h-screen flex justify-center items-center md:text-left mt-12 sm:text-center">
+            <div class="flex flex-col relative w-full m-7">
+                <div class="bg-red-600 text-white sm:rounded-full p-12 shadow-xl h-72 mt-12">
+                    <h2 class="text-4xl  ml-24">Create Announcement Form</h2>
+                    <p id="hospitalNameOnForm" class="text-2xl mt-4  ml-28"></p>
+                    <p class="text-md mb-12 sm:mt-16  ml-28">If your hospital already has a need announcement with same blood type, <br> the new quantity of need will add on its!</p>
+                </div>
+            <form id="addNeedForBlood" class="sm:absolute right-24 bg-white sm:rounded-md p-2 sm:w-3/12 flex flex-col justify-center items-center shodow-xl">
+                    <div class="bg-gray-300 mb-4 rounded-md w-full">
+                            <img src="../Images/bloodDrop.png" class="rounded-full w-24 mt-6 mb-6 mx-auto" id="profile" alt="profile-pic">
+                        </div>
+                        <h3 class="text-red-600 text-sm mb-3 font-bold mt-2">Need Informations</h3>
+                        <div class="md:flex md:flex-row w-full">    
+                            <label class="md:visible text-sm text-red-600 md:m-2 md:text-justify sm:invisible" for="bloodType">BloodType:</label>
+                            <select id="bloodType" name="bloodType" class="text-sm text-red-600 font-semibold w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-4"></select>
+                        </div>                        
+                        <div class="md:flex md:flex-row w-full">    
+                            <label class="md:visible text-sm text-red-600 md:m-2 md:text-justify sm:invisible" for="quantityNeeded">Quantity (Unit):</label> 
+                            <input type="number" min="0" id="quantityNeeded" name="quantityNeeded" class="text-sm text-red-600 font-semibold w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-4">
+                        </div>
+                        <div>
+                            <button type="submit"class="bg-red-500 hover:bg-red-600 w-full text-sm text-white w-full mt-4 mb-7 rounded-md focus:outline-none p-2">Create Announcement</button>
+                        
+                        </div>
+                    
+                </form>
+                <div class="flex flex-row justify-end mt-48 text-xs">
+                    <p>Copyright &copy;2023</p>
+                    <p>With<span class="text-red-500 text-2xl">&heartsuit;</span> by <a href="#" class="hover:underline text-red-500" aria-hidden="true">Adamın Biri</a></p>
+                </div>
+            </div>
+        </main>
+        <script src="../../cookies.js"></script>
+        <script src="../JavaScript/hospitalPanel.js"></script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donor Info</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../css/addDonor.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="page icon" href="../../Authentication/images/icon.png" type="image/x-icon">
+        
+    </head>
+    <body class="bg-gray-200">    
+        <main class="h-screen flex justify-center items-center md:text-left sm:text-center">
+        <button onclick="logout()">Log out</button>
+        <div class="flex flex-col relative w-full m-7">
+            <div class="bg-red-500 text-white sm:rounded-md p-5 shadow-xl mt-24">
+                <h2 class="text-2xl">Welcome to Blood Donation App</h2>
+                <p>Every donation is a life. We are thankfull for your interests!</p>
+                <p class="text-xs sm:mt-32">Tailwind is awesome</p>
+            </div>
+            <form id="addDonor" class="sm:absolute right-12 bg-white sm:rounded-md p-2 sm:w-4/12 flex flex-col justify-center items-center shodow-xl">
+                <h2 class="text-red-500 text-sm mb-3 font-bold">Donor Informations</h2>
+                <div class="rounded-full w-12 h-12 mb-4">
+                    <img src="../Images/user.png" id="profile" alt="profile-pic">
+                </div>
+                <div class="md:flex md:flex-row w-full">    
+                    <label class="md:visible text-xs text-red-500 md:m-2 md:text-justify sm:invisible" for="firstname">FirstName:</label> 
+                    <input type="text" id="firstname" name="firstname" placeholder="John" class="text-xs w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-4">
+                </div>
+                <div class="md:flex md:flex-row w-full">    
+                    <label class="md:visible text-xs text-red-500 md:m-2 md:text-justify sm:invisible" for="lastname">Lastname:</label> 
+                    <input type="text" id="lastname" name="lastname" placeholder="Doe" class="text-xs w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-5">
+                </div>
+                <div class="md:flex md:flex-row w-full">    
+                    <label class="md:visible text-xs text-red-500 md:m-2 md:text-justify sm:invisible" for="blood-type">BloodType:</label>
+                    <input type="text" id="blood-type" name="blood-type" placeholder="AB+" class="text-xs w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-4">
+                </div>
+                <div class="md:flex md:flex-row w-full">    
+                    <label class="md:visible text-xs text-red-500 md:m-2 md:text-justify sm:invisible" for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="18+" class="text-xs w-full p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-12">
+                </div>
+                <div class="md:flex md:flex-col w-full mt-2">    
+                    <label class="md:visible text-xs text-red-500 md:ml-2 mr-2 mt-3 md:text-justify sm:invisible" for="street">Address:</label>
+                    <input type="street" id="street" name="street" placeholder="street" class="text-xs w-6/12 p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-20">
+                    <input type="city" id="city" name="city" placeholder="city" class="text-xs w-4/12 p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-20">
+                    <input type="country" id="country" name="country" placeholder="country" class="text-xs w-4/12 p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent md:ml-20">
+                    <input type="zip-code" id="zip-code" name="zip-code" placeholder="postal code" class="text-xs w-4/12 p-1 focus:outline-none border-b-2 border-gray-600 focus:border-red-500 bg-transparent  md:ml-20">
+                </div>
+                <button type="submit"class="bg-red-500 hover:bg-red-600 text-xs text-white w-full mt-4 mb-7 rounded-md focus:outline-none p-2">CONTINUE</button>
+            </form>
+            <div class="flex flex-row justify-between mt-36 text-xs">
+                <p>Copyright &copy;2023</p>
+                <p>With<span class="text-red-500 text-2xl">&heartsuit;</span> by <a href="#" class="hover:underline text-red-500" aria-hidden="true">Adamın Biri</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="../../cookies.js"></script>
+    <script src="../JavaScript/addDonorInfo.js"></script>
+</body>
+</html>
