@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6BB4F12E-354D-4BBB-9425-064ADA1B0727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeDropApp.Domain", "src\LifeDropApp.Domain\LifeDropApp.Domain.csproj", "{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeDropApp.Infrastructure", "src\LifeDropApp.Infrastructure\LifeDropApp.Infrastructure.csproj", "{390B4A62-91DF-407A-8DA8-F5902389BCDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeDropApp.Application", "src\LifeDropApp.Application\LifeDropApp.Application.csproj", "{DC74D900-CD24-496E-BF08-1D53B3726794}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0E20FBBD-E5E4-4077-ACC8-F81F6E8A0742}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{87B17AA3-8004-4323-8523-22C29D942D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeDropApp.Api", "src\Presentation\API\LifeDropApp.Api\LifeDropApp.Api.csproj", "{392512B8-25F9-471A-96B7-50101005B929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{390B4A62-91DF-407A-8DA8-F5902389BCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{390B4A62-91DF-407A-8DA8-F5902389BCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{390B4A62-91DF-407A-8DA8-F5902389BCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{390B4A62-91DF-407A-8DA8-F5902389BCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC74D900-CD24-496E-BF08-1D53B3726794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC74D900-CD24-496E-BF08-1D53B3726794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC74D900-CD24-496E-BF08-1D53B3726794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC74D900-CD24-496E-BF08-1D53B3726794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392512B8-25F9-471A-96B7-50101005B929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392512B8-25F9-471A-96B7-50101005B929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392512B8-25F9-471A-96B7-50101005B929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392512B8-25F9-471A-96B7-50101005B929}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70EF6F63-C1F5-48AB-9A8C-DD4AE968A057} = {6BB4F12E-354D-4BBB-9425-064ADA1B0727}
+		{390B4A62-91DF-407A-8DA8-F5902389BCDA} = {6BB4F12E-354D-4BBB-9425-064ADA1B0727}
+		{DC74D900-CD24-496E-BF08-1D53B3726794} = {6BB4F12E-354D-4BBB-9425-064ADA1B0727}
+		{0E20FBBD-E5E4-4077-ACC8-F81F6E8A0742} = {6BB4F12E-354D-4BBB-9425-064ADA1B0727}
+		{87B17AA3-8004-4323-8523-22C29D942D4A} = {0E20FBBD-E5E4-4077-ACC8-F81F6E8A0742}
+		{392512B8-25F9-471A-96B7-50101005B929} = {87B17AA3-8004-4323-8523-22C29D942D4A}
+	EndGlobalSection
+EndGlobal
